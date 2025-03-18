@@ -1,0 +1,1 @@
+<a href="<?= base_url()?>uploads/<?=$file?>" target="_blank"><i class="far fa-file"> File Transkrip S1</i></a>

@@ -1,0 +1,2 @@
+[28-Feb-2023 06:42:46 Asia/Jakarta] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/simbkdiakntar/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 1790
+[28-Feb-2023 06:45:01 Asia/Jakarta] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/simbkdiakntar/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 1790
