@@ -1,5 +1,7 @@
 # Sistem Informasi Manajemen Beban Kerja Dosen
 
+Simple system to handle teachers in universities to manage their workloads and administrative work.
+
 ## Prerequisites
 - PHP 7.4
 - Composer
