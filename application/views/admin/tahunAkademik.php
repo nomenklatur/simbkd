@@ -23,7 +23,8 @@
                   <td><?=$ad->tahun?></td>
                   <td><?=$ad->status == "0"?'<span class="badge bg-danger">Non-Aktif</span>':'<span class="badge bg-primary">Tahun Aktif</span>'?></td>
                   <td>
-                        <a href="<?=base_url()?>Admin/bkdDosen/<?=$ad->id?>" type="button" class="btn btn-primary btn-sm"><i class="fas fa-check"> Pilih Tahun</i></a>
+                        <a href="<?=base_url()?>Admin/bkdDosen/<?=$ad->id?>" type="button" class="btn btn-primary btn-sm"><i class="fas fa-check mr-1"></i>Pilih</a>
+                        <a href="<?=base_url()?>Admin/dosenLulus/<?=$ad->id?>" type="button" class="btn btn-success btn-sm"><i class="fas fa-list mr-1"></i>Rekap</a>
                   </td>
                 </tr>
                 <?php $i++;}?>
