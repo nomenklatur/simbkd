@@ -423,6 +423,25 @@ class Admin extends CI_Controller {
         $this->load->view('layout/footer');
     }
 
+    public function dosenLulus($tahun) {
+        $nip = $this->session->nip;
+        $kesimpulanAsessor1 = $this->dbObject->get_by_id_general('kesimpulan_ases1', 'masa_pelaksanaan', $tahun);
+        $kesimpulanAsessor2 = $this->dbObject->get_by_id_general('kesimpulan_ases2', 'masa_pelaksanaan', $tahun);
+        $dosen = $this->dbObject->get_general('dosen');
+        $data = array();
+        $data = array(
+            'nip' => $nip,
+            'judul'=> 'Daftar Dosen Lulus',
+            'dosen' => $dosen,
+            'tahun' => $tahun,
+            'kesimpulanAsessor1' => $kesimpulanAsessor1,
+            'kesimpulanAsessor2' => $kesimpulanAsessor2
+        );
+        $this->load->view('layout/header',$data);
+        $this->load->view('admin/dosenLulus');
+        $this->load->view('layout/footer');
+    }
+
     public function cetakKesimpulan($id, $tahun=""){
         $nip = $this->session->nip;
         $tahun1 = $this->dbObject->get_by_id_general('tahun', 'id', $tahun);
