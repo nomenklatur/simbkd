@@ -3,7 +3,7 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/*/.htaccess
-/vendor
+.DS_Store
 composer.lock
 user_guide/
 /system/sessions
