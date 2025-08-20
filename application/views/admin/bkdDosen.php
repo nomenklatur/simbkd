@@ -24,13 +24,7 @@
                   <td><?=$ad->nama?></td>
                   <td><?=$as->nilai=="0"?'<span class="badge bg-danger">Belum Dinilai</span>':'<span class="badge bg-success">Sudah Dinilai</span>'?></td>
                   <td><?=$as->nilai1=="0"?'<span class="badge bg-danger">Belum Dinilai</span>':'<span class="badge bg-success">Sudah Dinilai</span>'?></td>
-                  <td>
-                  <?php if(date('Y-m-d')==date('Y-m-d',$as->date_create+(60 * 60 * 24 * 42))){?>
-                        <button disabled  type="button" class="btn btn-primary btn-sm">Batas Waktu Penilaian Sudah Lewat</i></button>
-                  <?php }else{?>
-                       <a href="<?=base_url()?>Admin/bkd/<?=$ad->id?>/<?=$tahun?>" type="button" class="btn btn-primary btn-sm"><i class="fas fa-check"> Pilih Dosen</i></a>
-                  <?php }?>
-                  </td>
+                  <td><a href="<?=base_url()?>Admin/bkd/<?=$ad->id?>/<?=$tahun?>" type="button" class="btn btn-primary btn-sm"><i class="fas fa-check"> Pilih Dosen</i></a></td>
                 </tr>
                 <?php $i++;}}}?>
                 </tbody>
